@@ -1,0 +1,16 @@
+%%Environment Manager For LaTeX%%
+%%Author: Kang, Byungmin %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Ver: 1.00(Jan 08, 2020)%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\usepackage{amsmath}
+\ProvidesPackage{UserEnvironments}[2020/01/08]
+\newenvironment{Exercise}[1]{\refstepcounter{ExerciseCounter}\textbf{Exercise \theChapterCounter.\thesection.\theExerciseCounter} \large$\quad$ #1\\\normalsize\textit{Sol}:}{ $\blacksquare$\\}
+\newenvironment{Exercises}{\refstepcounter{ExerciseCounter}\textbf{Exercise \theChapterCounter.\thesection.\theExerciseCounter \\}
+}{\\}
+
+\newenvironment{Exercisess}[1]{\refstepcounter{ExerciseCounter}\textbf{Exercise \theChapterCounter.\thesection.\theExerciseCounter }\large$\quad$#1\\\normalsize
+}{\\}
+
+\newenvironment{SubExercise}[1]{\refstepcounter{SubExerciseCounter}(\alph{SubExerciseCounter}) \large#1\\\normalsize\textit{Sol}:}{ $\blacksquare$\\}
