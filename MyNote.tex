@@ -8,7 +8,7 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{caption}
-
+\usepackage{hyperref}
 \graphicspath{{./figs/}}
 
 \title{Notes on Helix Fit}
@@ -65,7 +65,7 @@
 		\end{picture}
 		\caption{}\label{Rep}
 	\end{figure}
-	\section{Result Comparison in HypTPC}
+	\section{Position Residual Comparison with HypTPC Data}
 		\begin{figure}[h]
 		\centering
 		\begin{picture}(400,180)
@@ -85,4 +85,17 @@
 		\caption{}\label{Resi}
 	\end{figure}
 	Figure \ref{Resi} shows the comparison of radial residuals between (a) PoC Method and (b) MRD method for scattered $\pi$s from $^{12}$C target, in 1T B-field. As discussed in the above section, PoC method minimizes $\delta_r^2+\delta_T^2$, hence $\delta_r$ may not be in minimum. As so we observe a dip structure in (a).
+	\section{Position Resolution}
+	\subsection{Radial Resolution}
+	To be written... Check \cite{TPCRes}
+	\subsection{Vertical Resolution}
+	To be written...
+	\section{Momentum Resolution in HypTPC Beamthrough Analysis}
+	To be written...
+	\begin{thebibliography}{}
+		\bibitem{TPCRes}
+		TPC Spatial Resolution Study from W.S. Jung\\
+		\href{https://lambda.phys.tohoku.ac.jp/hyptpc-wiki/lib/exe/fetch.php?media=document:analysis:tpcspatialresolution.pdf}%
+		{https://lambda.phys.tohoku.ac.jp/hyptpc-wiki/lib/exe/fetch.php?media=document:analysis:tpcspatialresolution.pdf}
+	\end{thebibliography}
 \end{document}
